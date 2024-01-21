@@ -24,7 +24,7 @@ class CountdownTimer {
     this.is_running = false
     this.warn_when = parseInt(el.dataset.warnWhen) || -1
     this.update_every = parseInt(el.dataset.updateEvery) || 1
-    this.play_sound = attrIsTrue(el.dataset.playSound)
+    this.play_sound = el.dataset.playSound
     this.blink_colon = attrIsTrue(el.dataset.blinkColon)
     this.startImmediately = attrIsTrue(el.dataset.startImmediately)
     this.timeout = null
